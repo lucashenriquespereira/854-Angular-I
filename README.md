@@ -32,7 +32,8 @@ Quando interagimos com as página ou navegamos entre elas, ao invés de carregar
 
 A CLI Angular é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, estruturar e manter aplicativos Angular diretamente de um shell de comando.
 
-`npm install -g @angular/cli`
+1. Instalar o NodeJs (https://nodejs.org/en/download/)
+2. Instalar a Angular CLI: `npm install -g @angular/cli`
 
 ---
 
