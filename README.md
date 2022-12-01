@@ -58,6 +58,77 @@ A CLI Angular é uma ferramenta de interface de linha de comando que você usa p
 
 ---
 
+## Configurando o bootstrap
+
+Para poder utilizar os estilos do Bootstrap em sua aplicação Angular, são necessários os seguintes passos:
+
+1. Instalar o Bootstrap e Bootstrap Icons:
+
+`npm install bootstrap bootstrap-icons` 
+
+2. No arquivo `angular.json`, adicionar a referência aos paths das bibliotecas instaladas:
+
+```js
+  "styles": [
+    "node_modules/bootstrap/scss/bootstrap.scss",
+    "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+    "src/styles.scss"
+  ],
+  "scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  ]
+```
+
+---
+
+## Databinding
+
+De forma simplificada, databinding significa comunicação, comunicação entre o template (HTML) e o código TypeScript (lógica de negócio).
+
+Essa comunicação pode se dar de três formas:
+
+- Dados do TypeScript para o template HTML (interpolação de string ou property binding);
+
+- Dados do template para o TypeScript (event binding);
+
+- Ou, ainda, combinando as duas formas anteriores (two-way-binding)
+
+---
+
+## Interpolação de string
+
+Através da interpolação de string, podemos exibir no template qualquer valor que se resolva como uma string. Assim, podemos exibir, tanto o valor de uma variável, quanto o retorno de uma função que retorne uma string. 
+
+Vamos à pratica!
+
+---
+
+## Property binding
+
+Com o property binding, podemos alterar dinamicamente o comportamento dos elementos no template.
+
+Let's go!
+
+---
+
+## Event binding
+
+Até agora vimos como enviar dados do TypeScript para o template. Agora vamos ver o inverso.
+
+Imagine um botão, que ao ser clicado, espera-se que determinado comportamento ocorra. Para isso, usamos o event binding, através do qual podemos emitir eventos do template HTML para o TypeScript.
+
+Vamos ver na prática!
+
+---
+
+## Two-way-binding
+
+O two-way-binding nos permite combinar a comunicação em duas vias. Com o two-way-binding, podemos, ao mesmo tempo que enviamos dados do TypeScript para HTML, realizar o inverso. Dessa forma, temos sempre os dois lados com a informação atualizada.
+
+Vamos testar isso na prática!
+
+---
+
 ## Referências e links úteis
 
 - [Documentação Angular](https://angular.io/docs)
@@ -75,3 +146,5 @@ A CLI Angular é uma ferramenta de interface de linha de comando que você usa p
 - [Como usar seus componentes Angular em qualquer lugar](https://blog.wgbn.com.br/como-usar-seus-componentes-angular-em-qualquer-lugar-3ef1d57c117e)
 
 - [Como adicionar Bootstrap a um aplicativo Angular](https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/)
+
+- [Binding syntax](https://angular.io/guide/binding-syntax)
