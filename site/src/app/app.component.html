@@ -18,7 +18,10 @@
 
   <!-- About -->
   <section id="about" class="my-5">
-    <app-about></app-about>
+    <app-about
+      [aboutData]="data.about"
+      (elementCreated)="onElementCreated($event)"
+    ></app-about>
   </section>
   <!-- End About -->
 
@@ -30,16 +33,15 @@
 
   <!-- Contact -->
   <section id="contact" class="my-5">
-    <app-contact></app-contact>
+    <app-contact (sendForm)="onContactFormSubmitted($event)"></app-contact>
   </section>
   <!-- End Contact -->
 
   <div class="btn-top">
     <a class="btn btn-link" href="#main">
-      <img src="./assets/images/seta-para-cima.png" alt="...">
+      <img src="./assets/images/seta-para-cima.png" alt="..." />
     </a>
   </div>
-
 </main>
 <!-- End Main -->
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppData } from './models/app-data.model';
+import { ContactFormData } from './models/contact-form-data.model';
 
 @Component({
   selector: 'app-root',
@@ -48,6 +49,14 @@ export class AppComponent {
         zipCode: "69911-262"
       }
     }
+  }
+
+  onElementCreated(element: string): void {
+    console.log('Elemento criado:', element);
+  }
+
+  onContactFormSubmitted(formData: ContactFormData): void {
+    console.log("Formulário enviado com sucesso!", formData);
   }
 
 }
