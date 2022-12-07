@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppData } from './models/app-data.model';
 import { ContactFormData } from './models/contact-form-data.model';
+import { InputSearchData } from './models/input-search-data.model';
 
 @Component({
   selector: 'app-root',
@@ -59,4 +60,7 @@ export class AppComponent {
     console.log("Formulário enviado com sucesso!", formData);
   }
 
+  onSearchSubmitted(searchData: InputSearchData): void {
+    console.log(searchData.inputSearch)
+  }
 }
